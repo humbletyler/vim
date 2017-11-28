@@ -1,0 +1,15 @@
+set rtp+=~/.vundle/vundle
+
+call vundle#begin('$HOME/.vundle')
+Plugin 'gmarik/vundle'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'zchee/deoplete-jedi'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
+Plugin 'rafi/awesome-vim-colorschemes'
+nnoremap <leader>u :GundoToggle<CR>
+nnoremap <leader>] :Ag! <CR>
+nnoremap <leader>[ :FZF!<CR>
+call vundle#end()
